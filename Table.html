@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" width="100%">
+
+        <tr>
+            <td>1st</td>
+            <td>2nd</td>
+            <td>Action</td>
+            <td>output</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div><input type="number" id="txt1"></div>
+            </td>
+            
+            <td>
+                <div><input type="number" id="text2"></div>
+            </td>
+            <div></div>
+            <td><input type="button"  onclick="addition();"value="+" id="button1"></td>
+            <td>
+                <div><input type="text" disabled id="text3"></div>
+            </td>
+        </tr>
+        <tr>
+
+            <td>
+                <div><input type="text" id="text4"></div>
+            </td>
+            <td>
+                <div><input type="text" id="text5"></div>
+            </td>
+            <div></div>
+            <td><input type="button" value="-" onclick="substraction();"id="text4"></td>
+            
+            <td>
+                <div><input type="text"id="text6"disabled></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number"id="text7">
+            </td>
+            <td>
+                <input type="number"id="text8">
+            </td>
+            <td><button id="text9" onclick="multiplication();">*</button></td>
+            <td><input type="text" id="text10" disabled></td>
+        </tr>
+        <tr>
+            <td><input type="number"id="text11"></td>
+            <td><input type="number" id="text12"></td>
+            <td><button id="text13" onclick="division();">/ </button></td>
+            <td><input type="number" id="text14" disabled></td>
+
+        </tr>
+    </table>
+
+    <script>
+function addition(){
+let x=document.getElementById("txt1").value;
+let y=document.getElementById("text2").value;
+let z=parseInt(x)+parseInt(y);
+
+document.querySelector("#text3").value=z;
+}
+function substraction(){
+    let x=document.getElementById("text4").value;
+let y=document.getElementById("text5").value;
+  let a=parseInt(x)-parseInt(y);
+  document.querySelector("#text6").value=a;
+}
+function multiplication(){
+let a=document.getElementById("text7").value;
+let b=document.getElementById("text8").value;
+let c=parseInt(a)*parseInt(b);
+document.querySelector("#text10").value=c;
+}
+function division(){
+let w=document.getElementById("text11").value;
+let e=document.getElementById("text12").value;
+let z=parseInt(w)/parseInt(e);
+document.querySelector("#text14").value=z;
+}
+    </script>
+</body>
+
+</html>

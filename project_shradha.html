@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        #main{
+         height: 320px;
+         width:120px;
+            border:2px solid;
+            background-color: aqua;
+        }
+        
+        .red{
+            height: 100px;
+            width: 100px;
+            border-radius:50%;
+            background-color: red;
+        }
+        .yellow{
+            height: 100px;
+            width: 100px;
+            border-radius:50%;
+            background-color: yellow;
+        }
+        .green{
+            height: 100px;
+            width: 100px;
+            border-radius:50%;
+            background-color:green;
+            animation:cute 5s ease-in-out infiniteforwards ;
+        }
+        @keyframes cute{
+0%,100%{
+    opacity:1;
+}
+
+50%{
+    opacity:0;
+}
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="red  h"> red boa </div>
+        <div class="yellow h ">yellow box </div>
+        <div class="green h">green box</div>
+    </div>
+</body>
+</html>

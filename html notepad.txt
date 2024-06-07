@@ -1,0 +1,277 @@
+vs code shortcut
+.block$4 --> create 4 div including numbers
+alt shift downarrow ->replicate the line
+alt +down arrow --> shift the line up and down.
+----------------------------------------------------------------------------------------------
+
+attribute:- provide enhance functionality to a tag
+----------------------------------------------------------------------------------------------
+here html codes
+emmit->link:css ->link css file  
+<link rel="stylesheet"href="css_filename">
+
+//script include in  html just before body 
+ emmit->script:src
+<script  src="script.js"></script>
+title-> it is also use search engines 
+*meta ->self closing tag
+
+comment->  <!--  content   -->
+  
+  ancher tag :-
+  <a href="https://www.google.com">open google</a>
+  <a href="https://www.amazon.com">open amazon</a>
+
+target="_blank"-> used to open a webside in new tab.
+image tag:-
+<image src="image name.png" alt="alternative name ">
+
+table tag:-
+<table>
+<tr>
+<th> heading no 1  </th>
+<th>heading no 2    </th>
+</tr>
+
+<tr>
+<td> data 1  </td>
+<td> data 2  </td>
+</tr>
+</table>
+<br> for break the line
+<theader>  then <tfooter>  then <tbody>
+ snippit:-
+ meta:des-><meta name="description" content="this specify the description ">
+
+form:- 
+<form action=" request :-get and post">
+* get is a simple request 
+<input type="text" name="username" placeholder="enter the user name" :-placeholder means that it display the text in the squire  box 
+
+pre tag-> it is use to display the 
+text as it is.
+<pre></pre>
+
+
+
+
+header-> nav tag
+main->  inside main there are the tags 1. section 
+2.article 3.aside 
+footer
+radio button
+<input type="radio"name="gender"id="male"
+name="male">
+<label for="male">male</label>
+
+check box
+<inut type="checkbox" name="___"
+id="chk" value="yes">
+<label for="chk">subscribe my channel</label>
+
+<div>
+<textarea name="comment" rows="8"
+cols="50">  enter your text</textarea>
+select tag:-
+<select  name="fruits">
+<option value="banana">banana</option>
+<option value="grape">grape</option>
+<option value="apple">apple</option>
+</select>
+
+INLINE ELEMENT:-how much  space is required that much it cotain
+
+BLOCK ELEMENT:- entire line is contain
+ID &CLASS
+<div id="firstdiv" class="red bg-yellow">first</div>
+<div id="seconddiv">second</div>
+<span class="red"></span>
+* one element cotain multiple classes but id is contain uniquie identifier....
+VIDEO TAG 
+ <video src="video.mp4"controls hight="255" width=5665></video>
+1-->loop -it create loops
+2-->contols -it create a controls 
+3-->autoplay 
+4--> muted- vidio is played in a mutedly
+5-->poster- it set a poster to your vidio
+these are attributes of video tag.
+PRELOAD attribute:-means featch the data preveously
+1.none 2.meta 3.auto
+SVG TAG:-SCALABLE VECTOR GRAPHICS
+<svg height="250"width="250">
+       <circle cx="50"cy="50"r="40"stroke="black"stroke-width="3"fill="blue"/> 
+    </svg>
+
+iframe:-add the webside into ur page or youtube videos (go to the youtube vidio then share option then click embed option then the option shows iframe code.)
+<iframe src="webside link" hight=" "width=" ">
+</iframe>
+ DECLARE MULTIPLE CLASS USING SPACE  
+<div class="box box1"> i m a box </div>
+    <div class="box box2">i m second one </div>
+->generate 3 class using short hand 
+.cards>.cardss*3
+
+
+----------------------------------------------------------------------------------------------
+here css code 
+line-throw:- it is a text decoration property create a line on to the text
+inline css-> <p style="background-color:red;">
+.(dot):- means class
+# :- means id
+div{  -->div is selector 
+  color:red;-->declaration
+}
+selecting multiple elements
+div,span{
+  color:blue;--> blue is value
+}
+
+/* element selector */
+        div{
+            background-color: pink;
+        }
+HOW TO ADD CSS PEG INTO HTML
+3 types->
+1.inline css-->using style attribute
+2.internal css
+3.external css using external file
+<h2 style="background-color:red;color=white;>hii jii </h2>
+---CHILD SELECTOR----
+div>p{  --> p is direct child of div
+    background-color: rgb(127, 35, 54);
+color:aqua;
+}
+-----DECENDENT SELECTOR---
+it specifies that p is a decendent of div means div  ke ander p jaha per vi ho uska property set ho jaye
+div p{
+  properties
+}
+
+UNIVERSAL SELECTOR 
+*{
+    margin:0;
+    padding:0;
+}
+PSEUDO SELECTOR 
+a:visited{ -->visited link is show yellow color.
+  color:yellow;
+}
+in side html pag add a link using anchor tag.
+
+a:link{
+  color:red;--> non visited link is shows red colour 
+}
+a:active{
+  properties;
+}
+a:hover{
+  properties;
+}
+p:first-child{
+  background-color:red;
+}--> jaha jaha p apne parent ka 1st child hain waha change hoga
+
+----FONT FAMILY----
+
+p{
+      font-family:'Times New Roman', Times, serif ;
+      font-style:oblique;
+      font-weight:600;
+      text-decoration:underline;
+    }
+
+
+    --------SOME PROPERTIES----------
+    p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   /* font-style:italic ; */
+   /* text-decoration: underline; */
+   /* font: weight 100px;; */
+   font-size: 20px;
+   line-height: 2;
+}
+h2{
+   text-transform: capitalize;
+   /* text-decoration: underline; */
+   text-decoration-color: rgb(29, 193, 193);
+   /* text-decoration-style: wavy; */
+   /* text-decoration-thickness: 7px; */
+   text-indent: 200px;
+}
+
+.lorem{
+   border:solid red 2px;
+   width:45px;
+   word-break:break-all;
+   /* text-overflow:clip; */
+   /* overflow:hidden;; */
+}
+  colur can be represented is 5 types
+1.hex colour code
+2.rgb
+ex:-color:rgb(red, green, blue);
+3.rgba
+4.hsl(saturation or light)
+
+----specific:---------
+inline style >id selector> class or attribute selector> element selector >universal selector
+
+--Calculate Specificity--
+.universal selctor :0
+.element selector or pseudo elements :1
+.class selector,attribute selector and pseudo classes 10
+example of attribute selector-
+   [data-x=a]{
+   background-color:red;
+   }
+    <h1 style="color:aquamarine" class="yellow cred cpurple" data-x="a">it is a example solurtyhcb </h1>
+. id selectors:100
+.inline style:1000
+when ever we write !important then its specificity is 10000 points
+
+vw-view port width
+vh-view port height
+
+.container{
+            box-sizing: border-box;
+            border:2px solid blueviolet;
+            width:80vw;
+            height:10vh;
+            margin:auto;
+            background-color: aqua;
+            font-size: 18px;
+        }
+        .container  p {
+            font-size: 2em;
+          font-size:2rem; use for roots    
+        }
+        
+min-height: 80vh;
+* span is a inline element 
+* div is a block level element
+SHADOW property
+syntax:
+  box-shadow:h-offset v-offset blur spread color inset;
+convert block element to inline
+display:inline;
+visibility: hidden means the squire is vanished but space is as it
+
+OVERFLOW PROPERTY 
+overflow:scroll;
+list style position do including markers
+list-style-position:inside;
+text-overflow: it do last word of a sentence in right side create(......) okk
+overflow:hidden auto;  means in x- hidden and y- auto
+postion:relative ->meaning is that position of box we will change according to ur requirement
+then set top:45px then up and down arrow
+
+-------SHADOW PROPERTY----------
+box-shadow:horizontal offset,vertical offset,blur,spread,color;
+----------------------------------------------------------------------------------------------
+here javascript codes 
+alert("hii am sunal")->gives alert
+
+let-acess block scope and it also redefined
+const- constant 
+var- acess globaly and redefined
+typeof variable_name

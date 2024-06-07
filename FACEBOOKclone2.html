@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+       
+        .main{
+             
+            background-color: #f0f2f5;
+        }
+        .first_div,.second_div{
+            display: flex;
+            justify-content: center;
+           
+        }
+        
+        .login{
+            font-family: inherit;
+            font-size: 18px;
+            line-height: 22px;
+            margin: 5px 0 5px 22px;
+            font-family:  Arial, sans-serif;
+            font-size: 15px;
+           
+            display: flex;
+          
+            justify-content: center;
+        }
+        .button{
+            margin:14px 0px 14px 16px;
+            
+           width: 304px;
+           background-color:#1877f2 ;
+           padding: 5px;
+           color: white;
+           font-size: 18px;
+        } 
+        .container{
+           height: 16rem;
+            width: 33%;
+           background-color: white;
+            box-shadow: 0 0 1px 0;
+            border-radius: 5px;
+        }
+        .gmail ,.space {
+            padding: 14px 16px;
+            width: 19rem;
+        }
+        .forget{
+            
+            font-weight: normal;
+            font-size: 12px;
+            padding: 12px 0 18px;
+          --color:#1877f2 ;
+        }
+       .a{
+        border-radius: 6px;
+        border:1px solid #dddfe2;
+       } 
+       a:hover{
+        text-decoration: underline;
+        color: var(--color);
+       }
+       button:hover{
+        background-color: #09438f;
+       }
+       @media (width >=640px){
+       
+        .container{
+            width: 50%;
+            height: 70%;
+        }
+        .button{
+           width:85%;
+           
+           font-size: 13px;
+        }
+        
+        .space{
+            font-size: 11px;
+            width:80%;
+        }
+        .gmail{
+            margin-left:7px;
+           padding:6px 2px 2px 2px;
+            font-size:11px;
+            width:90%;
+        } }
+     
+@media (width>=768px){
+    .container{
+            width: 50%;
+            height: 70%;
+        }
+        .button{
+           width:80%;
+           font-size: 13px;
+        }
+        .space{
+            font-size: 11px;
+            width:80%;
+        }
+        .gmail{
+            margin-left:7px;
+           padding:6px 2px 2px 2px;
+            font-size:11px;
+            width:90%;}      
+}
+       @media (width<=1024px){
+        .container{
+            width: 81%;
+            height: 70%;
+        }
+        .button{
+           width:85%;
+           
+           font-size: 13px;
+        }
+        
+        .space{
+            font-size: 11px;
+            width:80%;
+        }
+        .gmail{
+            margin-left:7px;
+           padding:6px 2px 2px 2px;
+            font-size:11px;
+            width:90%;
+        }
+        
+       }
+       
+
+    </style>
+</head>
+
+<body>    
+       <div class="main">
+
+       
+    <div class="first_div">
+        <img  src="facebooklogo.svg" style="margin-top: 30px;" alt="facebooklogo">
+    </div>
+    <div class="second_div">
+        <div class="container">
+
+
+            <div class="login ">Facebook କୁ ଲଗ୍‌ ଇନ୍‌ କରନ୍ତୁ</div>
+
+            <div class="gmail">
+
+                <input type="gmail" class="gmail a " name="gmail " placeholder=" ଇମେଲ୍ କିମ୍ବା ଫୋନ୍ ନମ୍ବର">
+            </div>
+            <div>
+                <input type="password" name="password" class="space a " placeholder=" ପାସ୍‌ୱାର୍ଡ୍" style="margin-left: 1rem;">
+
+            </div>
+            <button class="button a "> ଲଗ୍ ଇନ୍ କରନ୍ତୁ</button>
+
+            <div style="text-align: center;">
+
+                <a class="forget ">ଏକାଉଣ୍ଟ୍ ଭୁଲିଯାଇଛନ୍ତି .</a><a class="forget ">Facebook ପାଇଁ ସାଇନ୍ ଅପ୍ କରନ୍ତୁ</a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+</html>
