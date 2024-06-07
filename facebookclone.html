@@ -1,126 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        color: #1c1e21;
+        height: 100%;
+        width: 100%;
+      }
+      .main {
+        width: 100%;
+        height: 100vh;
+        background-color: #f0f2f5;
+      }
+      .container {
+        width: 50%;
+        margin: auto;
+        height: auto;
+      }
+      .container object {
+        right: 0px;
+        width: 100%;
+        height: 100%;
+      }
+      .object {
+        padding: 4.5rem;
+      }
+      .mainbox {
+        margin: auto;
+        width: 25%;
+        border-radius: 16px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f2f5;
+        /* box-shadow:horizontal offset,vertical offset,blur,spread,color; */
+        box-shadow: 1px 0px 4px;
+        position: relative;
+      }
+      button {
+        background-color: #1877f2;
+        color: white;
+        margin-bottom: 56px;
+        border-radius: 3px;
+        padding: 5px 10px;
+      }
+      div a {
+        color: #1877f2;
+        font-size: 12px;
+      }
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<style>
-		*{
-			margin: 0;padding: 0;
-			box-sizing: border-box;
-		}
-		body{
-			color:#1c1e21;
-			height: 100%;width: 100%;
-		}
-		.main{
-			width: 100%;
-			background-color: #f0f2f5;
-		}
-		.container{
-			
-			width:50%;
-			margin:auto;
-			height: auto;
-		}
-		.container object{
-			
-			right: 0px;		
-			width:100%;
-			height:100%;
-			
-		}
-		.object{
-			padding: 4.5rem;
-		}
-     .mainbox{
-		margin: auto;
-		width:25%;
-		height: 12%;
-      border-radius: 16px;
-	   padding-top: 80px;
-	   padding-bottom: 80px;
-	   display: flex;
-	   flex-direction: column;
-	   justify-content: center;
-	   align-items: center;
-	   background-color: #f0f2f5;
-	   /* box-shadow:horizontal offset,vertical offset,blur,spread,color; */
-	   box-shadow:  1px 0px 4px ;
-	   position:relative;
-	 }
-button{
-	background-color: #1877f2;
-	color: white;
-	margin-bottom: 56px;
-	border-radius: 3px;
-}
-div  a{
-	color: #1877f2;
-	font-size:12px;
-}
-
-/* .space{
+      /* .space{
 	margin-left: 18px;
 	/* padding:5px 2px; */
 
-.mar{
-	margin: 2px 0px 4px 0px;
-}
-._9axz{
-	font:  16px;
-	font-family: inherit;
-	font-weight: 500;
-	line-height: 50px;;
-	top:8px;
-	position: absolute;
-	padding: 0px 0 0;
-}
-.password,.space{
-margin-top: 9px;
-}
-.s{
-	
-	
-}
-button{
-	line-height: 50px;
-	
-}
-.gmail{
-	/* margin-top: 100px; */
-}
-	</style>
-</head>
+      .mar {
+        margin: 2px 0px 4px 0px;
+      }
+      ._9axz {
+        font: 16px;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 50px;
+        top: 8px;
+        position: absolute;
+        padding: 0px 0 0;
+      }
+      .password,
+      .space {
+        margin-top: 9px;
+      }
+      .s {
+      }
+      .gmail {
+        /* margin-top: 100px; */
+      }
+    </style>
+  </head>
 
-<body>  
-	<div class="main">
-	<div class="container ">
-	<object data="facebooklogo.svg"></object>
-  </div>
-	<div class="mainbox">
+  <body>
+    <div class="main">
+      <div class="container">
+        <object data="facebooklogo.svg"></object>
+      </div>
+      <div class="mainbox">
+        <div class="_9axz s">LOGIN</div>
 
-		<div class="_9axz s">LOGIN</div>
-	
-	<div class="gmail">
+        <div class="gmail">
+          <input
+            type="gmail"
+            class="space s"
+            name="gmail "
+            placeholder="Email or phone no "
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            class="space s mar"
+            placeholder="passord"
+          />
+        </div>
+        <button class="space s">Login</button>
 
-<input type="gmail" class="space s" name="gmail " placeholder="Email or phone no ">
-	</div>
-	<div>
-        <input type="password" name="password" class="space s mar"placeholder="passord" >
-      
-	</div>
-		<button class="space s ">Login</button>
-	
-	<div>
-
-		<a>forgotten </a> 
-		<a>Sign up for facebook</a>
-	 </div>
-</div>
-</div>
-</body>
-
+        <div>
+          <a>forgotten </a>
+          <a>Sign up for facebook</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
